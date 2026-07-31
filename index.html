@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arun Chaudhary | Full-Stack Developer & AI/ML Enthusiast</title>
+    <meta name="description"
+        content="Portfolio of Arun Chaudhary — Full-stack Web Developer, MERN Stack specialist, and aspiring AI/ML Engineer building scalable web applications and intelligent systems.">
+    <meta name="keywords"
+        content="Arun Chaudhary, Portfolio, Full Stack Developer, Java, MERN Stack, AI/ML, Computer Science, React, Node.js">
+    <meta name="author" content="Arun Chaudhary">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Arun Chaudhary | Full-Stack Developer & AI/ML Enthusiast">
+    <meta property="og:description"
+        content="Passionate about building scalable web applications and exploring AI/ML. Check out my projects and skills.">
+    <meta property="og:image" content="assets/image.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Google Fonts (Premium Typography) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Geist+Mono:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Devicon (for skill icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top" id="main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Arun Chaudhary</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link text-reset" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-reset" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-reset" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link text-reset" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link text-reset" href="#achievements">Achievements</a></li>
+                    <li class="nav-item"><a class="nav-link text-reset" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="theme-btn" class="btn btn-outline-light rounded-circle shadow-none"
+                            aria-label="Toggle theme">
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section position-relative overflow-hidden" id="home">
+        <!-- Particle Canvas -->
+        <canvas id="particles-canvas"></canvas>
+
+        <!-- Floating Decorative Shapes -->
+        <div class="hero-float-shape triangle triangle-1"></div>
+        <div class="hero-float-shape triangle triangle-2"></div>
+        <div class="hero-float-shape triangle triangle-3"></div>
+
+        <!-- Floating Icon Badges -->
+        <div class="hero-float-badge badge-1"><i class="fas fa-lightbulb"></i></div>
+        <div class="hero-float-badge badge-2"><i class="fas fa-chart-line"></i></div>
+        <div class="hero-float-badge badge-3"><i class="fas fa-comments"></i></div>
+
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-lg-7 text-center text-lg-start hero-content" data-aos="fade-right">
+                    <!-- Status Badge -->
+                    <div class="status-badge">
+                        <span class="pulse-dot"></span>
+                        Open to Opportunities
+                    </div>
+                    <h5 class="text-primary fw-bold mb-3 font-mono">Hi there, I am</h5>
+                    <h1 class="display-3 fw-bold mb-2">Arun Chaudhary</h1>
+                    <h3 class="mb-4 text-secondary font-mono typing-effect">I'm a <span id="role-text"></span></h3>
+                    <p class="lead mb-4 text-muted">
+                        Computer Science Engineering student specializing in AI &amp; Machine Learning. Combining a
+                        strong foundation in the MERN Stack and Data Structures &amp; Algorithms to build intelligent,
+                        scalable applications that solve real-world problems.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#projects" class="btn btn-primary px-4 py-2 rounded-pill font-mono">View Work</a>
+                        <a href="assets/resume.pdf" download
+                            class="btn btn-outline-light px-4 py-2 rounded-pill font-mono"><i
+                                class="fas fa-download me-2"></i>Download Resume</a>
+                    </div>
+                    <div class="mt-5 d-flex gap-3 justify-content-center justify-content-lg-start fs-4">
+                        <a href="https://github.com/arunchaudhary45" target="_blank" class="text-reset hover-float"
+                            aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/arunchry45/" target="_blank" class="text-reset hover-float"
+                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/arunchaudhary45/" target="_blank"
+                            class="text-reset hover-float" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:arunchaudhary9054@gmail.com" class="text-reset hover-float"
+                            aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mb-5 mb-lg-0 position-relative" data-aos="fade-left">
+                    <!-- Gradient blob behind hero image -->
+                    <div class="hero-blob"></div>
+                    <img src="assets/image.jpeg" alt="Arun Chaudhary" class="hero-img img-fluid position-relative"
+                        onerror="this.src='https://via.placeholder.com/300'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+            <path d="M0,20 C240,60 480,0 720,30 C960,60 1200,10 1440,40 L1440,60 L0,60 Z">
+            </path>
+        </svg>
+    </div>
+
+    <!-- About Section -->
+    <section class="py-5" id="about">
+        <div class="container py-5">
+            <h2 class="text-center display-5 fw-bold mb-5" data-aos="fade-up"><span class="text-gradient">About
+                    Me</span></h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="custom-card p-4 h-100 position-relative overflow-hidden">
+                        <h3 class="h4 mb-4 font-mono text-primary">My Journey</h3>
+                        <p class="journey-text mb-3">
+                            I am a Computer Science Engineering student at <strong class="text-white">Lovely
+                                Professional
+                                University</strong> (2023-2027).
+                            My passion lies in solving complex problems through elegant code.
+                        </p>
+                        <p class="journey-text mb-3">
+                            Currently focused on <span
+                                class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25">Full
+                                Stack Development</span> using the
+                            MERN stack, while also
+                            building a strong foundation in <span
+                                class="badge bg-secondary bg-opacity-10 text-secondary border border-secondary border-opacity-25">Data
+                                Structures &
+                                Algorithms</span> with Java.
+                        </p>
+                        <p class="journey-text mb-3">
+                            Beyond web development, I am a passionate <span
+                                class="badge bg-warning bg-opacity-10 text-warning border border-warning border-opacity-25">AI/ML
+                                Enthusiast</span>, currently exploring neural networks and intelligent systems to build
+                            smarter applications.
+                        </p>
+                        <p class="journey-text mb-0">
+                            I believe in continuous learning effectively using technology to bridge the gap between
+                            ideas and reality.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <!-- Education Timeline -->
+                    <div class="custom-card p-4 h-100">
+                        <h3 class="h4 mb-4 font-mono text-primary d-flex align-items-center gap-2">
+                            <i class="fas fa-graduation-cap"></i> Education
+                        </h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-icon bg-primary text-white">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <h5 class="fw-bold text-light">Bachelor of Technology – CSE</h5>
+                                <p class="text-primary mb-1 font-mono small">Aug'23 - Present</p>
+                                <p class="text-muted mb-0">Lovely Professional University, Punjab</p>
+                                <p class="small text-muted mt-1"><i class="fas fa-star text-warning me-1"></i>CGPA: 6.54
+                                </p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon bg-secondary text-dark">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                                <h5 class="fw-bold text-light">Intermediate (Class XII)</h5>
+                                <p class="text-primary mb-1 font-mono small">Apr'21 – Mar'22</p>
+                                <p class="text-muted mb-0">Kalpanath Singh Kanya Inter College</p>
+                                <p class="small text-muted mt-1">Percentage: 73.68%</p>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon bg-info text-dark">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <h5 class="fw-bold text-light">Matriculation (Class X)</h5>
+                                <p class="text-primary mb-1 font-mono small">Apr'19 – Mar'20</p>
+                                <p class="text-muted mb-0">Swami Vivekanand Inter College</p>
+                                <p class="small text-muted mt-1">Percentage: 76.66%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter Section -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-3" data-aos="fade-up">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-number"><span class="counter" data-target="6">0</span>+</div>
+                        <div class="stat-label">Projects Built</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="stat-number"><span class="counter" data-target="5">0</span>+</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-number"><span class="counter" data-target="500">0</span>+</div>
+                        <div class="stat-label">Problems Solved</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="stat-number"><span class="counter" data-target="4">0</span></div>
+                        <div class="stat-label">HackerRank Badges</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider flip">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+            <path d="M0,20 C240,60 480,0 720,30 C960,60 1200,10 1440,40 L1440,60 L0,60 Z">
+            </path>
+        </svg>
+    </div>
+
+    <!-- Skills Section -->
+    <section class="py-5 bg-opacity-50" id="skills">
+        <div class="container py-5">
+            <h2 class="text-center display-5 fw-bold mb-5" data-aos="fade-up"><span class="text-gradient">Technical
+                    Skills</span></h2>
+            <div class="row">
+                <!-- Languages -->
+                <div class="col-12 mb-4" data-aos="fade-up">
+                    <div class="custom-card p-4">
+                        <h3 class="h4 skill-category-title">Languages</h3>
+                        <div class="skill-grid mb-0">
+                            <div class="skill-chip"><i class="devicon-java-plain colored"></i> <span>Java</span></div>
+                            <div class="skill-chip"><i class="devicon-c-plain colored"></i> <span>C</span></div>
+                            <div class="skill-chip"><i class="devicon-cplusplus-plain colored"></i> <span>C++</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-python-plain colored"></i> <span>Python</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-javascript-plain colored"></i>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="custom-card p-4">
+                        <h3 class="h4 skill-category-title">Frontend Development</h3>
+                        <div class="skill-grid mb-0">
+                            <div class="skill-chip"><i class="devicon-html5-plain colored"></i> <span>HTML5</span></div>
+                            <div class="skill-chip"><i class="devicon-css3-plain colored"></i> <span>CSS3</span></div>
+                            <div class="skill-chip"><i class="devicon-react-original colored"></i> <span>React.js</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-bootstrap-plain colored"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-tailwindcss-original colored"></i>
+                                <span>Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="custom-card p-4">
+                        <h3 class="h4 skill-category-title">Backend Development</h3>
+                        <div class="skill-grid mb-0">
+                            <div class="skill-chip"><i class="devicon-nodejs-plain-wordmark colored"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-express-original text-white"></i>
+                                <span>Express.js</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-mongodb-plain colored"></i> <span>MongoDB</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-mysql-original colored"></i> <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="custom-card p-4">
+                        <h3 class="h4 skill-category-title">Tools & DevOps</h3>
+                        <div class="skill-grid mb-0">
+                            <div class="skill-chip"><i class="devicon-git-plain colored"></i> <span>Git</span></div>
+                            <div class="skill-chip"><i class="devicon-github-original text-white"></i>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-vscode-plain colored"></i> <span>VS Code</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-postman-plain colored"></i> <span>Postman</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI / Machine Learning -->
+                <div class="col-12" data-aos="fade-up" data-aos-delay="400">
+                    <div class="custom-card p-4">
+                        <h3 class="h4 skill-category-title">Machine Learning & AI</h3>
+                        <div class="skill-grid mb-0">
+                            <div class="skill-chip"><i class="devicon-python-plain colored"></i> <span>Python
+                                    (Data)</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-tensorflow-original colored"></i>
+                                <span>TensorFlow</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-pytorch-original colored"></i>
+                                <span>PyTorch</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-scikitlearn-plain colored"></i>
+                                <span>Scikit-Learn</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-pandas-original text-white"></i>
+                                <span>Pandas</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-numpy-original colored"></i> <span>NumPy</span>
+                            </div>
+                            <div class="skill-chip"><i class="devicon-matplotlib-plain colored"></i>
+                                <span>Matplotlib</span>
+                            </div>
+                            <div class="skill-chip"><i class="fas fa-brain text-danger"></i> <span>Random Forest</span>
+                            </div>
+                            <div class="skill-chip"><i class="fas fa-chart-line text-info"></i> <span>Model Eval</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="col-12 mt-5" data-aos="fade-up" data-aos-delay="500">
+                <h2 class="text-center display-5 fw-bold mb-5"><span class="text-gradient">Soft Skills</span></h2>
+                <div class="custom-card p-5 text-center">
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <div class="skill-chip"><i class="fas fa-brain text-warning"></i> <span>Critical Thinking</span>
+                        </div>
+                        <div class="skill-chip"><i class="fas fa-users text-success"></i> <span>Team Player</span></div>
+                        <div class="skill-chip"><i class="fas fa-tasks text-info"></i> <span>Project Management</span>
+                        </div>
+                        <div class="skill-chip"><i class="fas fa-sync-alt text-primary"></i> <span>Adaptability</span>
+                        </div>
+                        <div class="skill-chip"><i class="fas fa-comments text-secondary"></i>
+                            <span>Communication</span>
+                        </div>
+                        <div class="skill-chip"><i class="fas fa-lightbulb text-warning"></i>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+            <path d="M0,30 C360,0 720,60 1080,20 C1260,0 1380,40 1440,30 L1440,60 L0,60 Z">
+            </path>
+        </svg>
+    </div>
+
+    <!-- Projects Section -->
+    <section class="py-5" id="projects">
+        <div class="container py-5">
+            <h2 class="text-center display-5 fw-bold mb-5" data-aos="fade-up"><span class="text-gradient">Featured
+                    Projects</span></h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="custom-card h-100 d-flex flex-column box-primary tilt-card">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h3 class="h5 fw-bold font-mono mb-1">Real-Time Construction Site Monitoring</h3>
+                                    <span
+                                        class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25">Jan
+                                        '25 – Mar '25</span>
+                                </div>
+                                <i class="fas fa-hard-hat text-primary fa-lg"></i>
+                            </div>
+                            <p class="text-muted small mb-3">AI-based safety compliance & monitoring system.</p>
+                            <ul class="list-unstyled small text-muted mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><strong>95%
+                                        Detection Accuracy:</strong> Random Forest model for safety violations (helmets,
+                                    vests) using pandas & scikit-learn.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><strong>75%+
+                                        Manual Work:</strong> Automated ML-driven insights & alerts reduced manual
+                                    monitoring load.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><strong>Live
+                                        Dashboard:</strong> Built with <strong>Python & Streamlit</strong> for real-time
+                                    visualization.</li>
+                            </ul>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Python</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Machine Learning</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Random Forest</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Streamlit</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">REST API</span>
+                                <span class="badge bg-secondary opacity-75 mb-1">MySQL</span>
+                            </div>
+                        </div>
+                        <div class="p-4 pt-0 mt-auto d-flex gap-2">
+                            <a href="https://github.com/arunchary45/Protrack" target="_blank"
+                                class="btn btn-sm btn-outline-primary flex-grow-1"><i class="fab fa-github me-1"></i>
+                                View Code</a>
+                            <a href="https://protrack-byuq283egnbhvc3xp7tmeg.streamlit.app/" target="_blank"
+                                class="btn btn-sm btn-primary flex-grow-1"><i class="fas fa-external-link-alt me-1"></i>
+                                Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="custom-card h-100 d-flex flex-column box-secondary tilt-card">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h3 class="h5 fw-bold font-mono mb-1">AI Chatbot - Workout Planner</h3>
+                                    <span
+                                        class="badge bg-secondary bg-opacity-10 text-secondary border border-secondary border-opacity-25">Jun
+                                        '25 – Aug '25</span>
+                                </div>
+                                <i class="fas fa-dumbbell text-secondary fa-lg"></i>
+                            </div>
+                            <p class="text-muted small mb-3">AI-powered personalized fitness assistant.</p>
+                            <ul class="list-unstyled small text-muted mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-secondary me-2"></i><strong>Gemini
+                                        API Integration:</strong> Real-time, context-aware exercise guidance & logic.
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-secondary me-2"></i><strong>95%
+                                        Response Accuracy:</strong> Analyzes fitness goals for custom recommendations.
+                                </li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-secondary me-2"></i><strong>Dynamic
+                                        Planning:</strong> 100% personalized fitness plans generated via AI.</li>
+                            </ul>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">React + Vite</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Google Gemini API</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">JavaScript</span>
+                                <span class="badge bg-secondary opacity-75 mb-1">CSS3</span>
+                            </div>
+                        </div>
+                        <div class="p-4 pt-0 mt-auto d-flex gap-2">
+                            <a href="https://github.com/arunchary45/FitAI-Pro" target="_blank"
+                                class="btn btn-sm btn-outline-secondary flex-grow-1"><i class="fab fa-github me-1"></i>
+                                View Code</a>
+                            <a href="https://fit-ai-pro-gamma.vercel.app/" target="_blank"
+                                class="btn btn-sm btn-secondary flex-grow-1"><i
+                                    class="fas fa-external-link-alt me-1"></i>
+                                Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="custom-card h-100 d-flex flex-column box-info tilt-card">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h3 class="h5 fw-bold font-mono mb-1">Personal Portfolio Website</h3>
+                                    <span
+                                        class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25">Feb
+                                        '26</span>
+                                </div>
+                                <i class="fas fa-globe text-info fa-lg"></i>
+                            </div>
+                            <p class="text-muted small mb-3">Modern, dark-themed digital resume & showcase.</p>
+                            <ul class="list-unstyled small text-muted mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-info me-2"></i><strong>Premium
+                                        UI/UX:</strong> Glassmorphism cards, mesh gradients, and smooth scroll
+                                    animations.</li>
+                                <li class="mb-2"><i
+                                        class="fas fa-check-circle text-info me-2"></i><strong>Interactive:</strong>
+                                    Powered by <strong>AOS.js</strong> & <strong>Typed.js</strong> for engaging user
+                                    experience.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-info me-2"></i><strong>Contact
+                                        Form:</strong> Fully functional integration with <strong>Formspree</strong>.
+                                </li>
+                            </ul>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Bootstrap 5</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">HTML5/CSS3</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">JavaScript</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">AOS.js</span>
+                            </div>
+                        </div>
+                        <div class="p-4 pt-0 mt-auto d-flex gap-2">
+                            <a href="https://github.com/arunchary45/Portfolio" target="_blank"
+                                class="btn btn-sm btn-outline-info flex-grow-1"><i class="fab fa-github me-1"></i>
+                                View Code</a>
+                            <a href="https://portfolioarun-dusky.vercel.app/" target="_blank"
+                                class="btn btn-sm btn-info flex-grow-1"><i class="fas fa-external-link-alt me-1"></i>
+                                Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 — Stock Trading Platform -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="custom-card h-100 d-flex flex-column box-warning tilt-card">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h3 class="h5 fw-bold font-mono mb-1">Stock Trading Platform</h3>
+                                    <span
+                                        class="badge bg-warning bg-opacity-10 text-warning border border-warning border-opacity-25">Feb
+                                        '26 – Apr '26</span>
+                                </div>
+                                <i class="fas fa-chart-line text-warning fa-lg"></i>
+                            </div>
+                            <p class="text-muted small mb-3">Full-stack Zerodha clone with live trading dashboard.</p>
+                            <ul class="list-unstyled small text-muted mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i><strong>Simulated
+                                        Brokerage:</strong> Built a complete replica of a top stock trading platform,
+                                    allowing users to experience real market workflows.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i><strong>Trading
+                                        Dashboard:</strong> Users can monitor a live stock watchlist, execute buy/sell
+                                    orders, and track their portfolio's profits and losses with visual charts.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i><strong>Secure
+                                        &amp; Reliable:</strong> Powered by modern web technologies to ensure safe user
+                                    logins, fast page loads, and secure financial data storage.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-warning me-2"></i><strong>Seamless
+                                        Experience:</strong> Designed an intuitive, mobile-friendly interface featuring
+                                    both a professional marketing website and a personalized user dashboard.</li>
+                            </ul>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">React</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Node.js</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Express</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">MongoDB</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Material UI</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Chart.js</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">REST API</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Bootstrap</span>
+                                <span class="badge bg-secondary opacity-75 mb-1">Vercel</span>
+                            </div>
+                        </div>
+                        <div class="p-4 pt-0 mt-auto d-flex gap-2">
+                            <a href="https://github.com/arunchaudhary45/Stock-Trading-Platform" target="_blank"
+                                class="btn btn-sm btn-outline-warning flex-grow-1"><i class="fab fa-github me-1"></i>
+                                View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 — AI Investment Agent -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="custom-card h-100 d-flex flex-column box-primary tilt-card">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h3 class="h5 fw-bold font-mono mb-1">Autonomous AI Investment Agent</h3>
+                                    <span
+                                        class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25">Latest</span>
+                                </div>
+                                <i class="fas fa-brain text-primary fa-lg"></i>
+                            </div>
+                            <p class="text-muted small mb-3">AI agent that researches companies and generates financial
+                                verdicts.</p>
+                            <ul class="list-unstyled small text-muted mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><strong>ReAct
+                                        Agent Loop:</strong> Implemented LangGraph's ReAct pattern to allow Gemini AI to
+                                    autonomously query real-time web search (Tavily) for financial research.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><strong>Smart
+                                        Fallback Engine:</strong> Engineered a robust fail-safe system that gracefully
+                                    degrades to a simulated financial database when APIs hit rate limits.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i><strong>Custom
+                                        Markdown AST Parser:</strong> Built a specialized parser in React to render raw
+                                    AI outputs into highly polished, institutional-grade financial reports.</li>
+                            </ul>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Next.js</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">LangChain.js</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">LangGraph</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Google Gemini</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Tailwind CSS v4</span>
+                                <span class="badge bg-secondary opacity-75 mb-1">Node.js</span>
+                            </div>
+                        </div>
+                        <div class="p-4 pt-0 mt-auto d-flex gap-2">
+                            <a href="https://github.com/arunchaudhary45/ai-investment-agent-" target="_blank"
+                                class="btn btn-sm btn-outline-primary flex-grow-1"><i class="fab fa-github me-1"></i>
+                                View Code</a>
+                            <a href="https://ai-investment-agent-ebon.vercel.app/" target="_blank"
+                                class="btn btn-sm btn-primary flex-grow-1"><i class="fas fa-external-link-alt me-1"></i>
+                                Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 — XCRM -->
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="custom-card h-100 d-flex flex-column box-danger tilt-card">
+                        <div class="p-4 flex-grow-1">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h3 class="h5 fw-bold font-mono mb-1">XCRM: AI-Native CRM</h3>
+                                    <span
+                                        class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25">Recent</span>
+                                </div>
+                                <i class="fas fa-users-cog text-danger fa-lg"></i>
+                            </div>
+                            <p class="text-muted small mb-3">AI-powered CRM orchestrator for target audience
+                                segmentation and outreach.</p>
+                            <ul class="list-unstyled small text-muted mb-4">
+                                <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><strong>AI-Powered
+                                        Campaigns:</strong> Integrated Google Gemini AI to translate natural language
+                                    into target audience segments and auto-generate personalized marketing copy.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><strong>Omnichannel
+                                        Simulator:</strong> Engineered a microservice to simulate email/SMS/WhatsApp
+                                    dispatches with asynchronous webhooks to track real-time delivery analytics.</li>
+                                <li class="mb-2"><i class="fas fa-check-circle text-danger me-2"></i><strong>Resilient
+                                        Architecture:</strong> Built a modular React &amp; Express system featuring an
+                                    automated fallback query engine that switches from MongoDB to local file storage
+                                    when offline.</li>
+                            </ul>
+                            <div class="mb-3">
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">React (Vite)</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Node.js</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Express</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">MongoDB</span>
+                                <span class="badge bg-secondary opacity-75 me-1 mb-1">Google Gemini</span>
+                                <span class="badge bg-secondary opacity-75 mb-1">Python</span>
+                            </div>
+                        </div>
+                        <div class="p-4 pt-0 mt-auto d-flex gap-2">
+                            <a href="https://github.com/arunchaudhary45/CRM-Management-System" target="_blank"
+                                class="btn btn-sm btn-outline-danger flex-grow-1"><i class="fab fa-github me-1"></i>
+                                View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider flip">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+            <path d="M0,30 C360,0 720,60 1080,20 C1260,0 1380,40 1440,30 L1440,60 L0,60 Z">
+            </path>
+        </svg>
+    </div>
+
+    <!-- Certifications Section -->
+    <section class="py-5 bg-opacity-50" id="certifications">
+        <div class="container py-5">
+            <h2 class="text-center display-5 fw-bold mb-5" data-aos="fade-up"><span
+                    class="text-gradient">Certifications</span></h2>
+            <div class="row g-4 justify-content-center">
+                <!-- Certification 1 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="100">
+                    <div class="custom-card p-4 h-100 d-flex flex-column box-info">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <i class="fas fa-cloud fa-2x text-info"></i>
+                            <span class="badge bg-info bg-opacity-10 text-info border border-info border-opacity-25">Oct
+                                '25</span>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2">Cloud Computing</h3>
+                        <p class="text-muted small mb-3">NPLTEL Online Certification</p>
+                        <div class="mt-auto">
+                            <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs107/Course/NPTEL25CS107S135870051010386462.pdf"
+                                target="_blank" class="btn btn-sm btn-outline-info w-100">Verify Credential <i
+                                    class="fas fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="200">
+                    <div class="custom-card p-4 h-100 d-flex flex-column box-warning">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <i class="fas fa-database fa-2x text-warning"></i>
+                            <span
+                                class="badge bg-warning bg-opacity-10 text-warning border border-warning border-opacity-25">Oct
+                                '25</span>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2">SQL (Advanced)</h3>
+                        <p class="text-muted small mb-3">HackerRank</p>
+                        <div class="mt-auto">
+                            <a href="https://www.hackerrank.com/certificates/iframe/531c65d6e727" target="_blank"
+                                class="btn btn-sm btn-outline-warning w-100">Verify Credential <i
+                                    class="fas fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="300">
+                    <div class="custom-card p-4 h-100 d-flex flex-column box-primary">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <i class="fas fa-laptop-code fa-2x text-primary"></i>
+                            <span
+                                class="badge bg-primary bg-opacity-10 text-primary border border-primary border-opacity-25">Sep
+                                '23</span>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2">Responsive Web Design</h3>
+                        <p class="text-muted small mb-3">FreeCodeCamp</p>
+                        <div class="mt-auto">
+                            <a href="https://www.freecodecamp.org/certification/Arun0978y6/responsive-web-design"
+                                target="_blank" class="btn btn-sm btn-outline-primary w-100">Verify Credential <i
+                                    class="fas fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification 4 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="400">
+                    <div class="custom-card p-4 h-100 d-flex flex-column box-danger">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <i class="fas fa-robot fa-2x text-danger"></i>
+                            <span
+                                class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25">Aug'25</span>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2">ChatGPT-4 Prompt Engineering</h3>
+                        <p class="text-muted small mb-3">Infosys Springboard</p>
+                        <div class="mt-auto">
+                            <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_014157693153288192147/1-99e7375f-24cc-4cb8-9005-6d378e548b8d.pdf"
+                                target="_blank" class="btn btn-sm btn-outline-danger w-100">Verify Credential <i
+                                    class="fas fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification 5 -->
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="500">
+                    <div class="custom-card p-4 h-100 d-flex flex-column box-danger">
+                        <div class="d-flex justify-content-between align-items-start mb-3">
+                            <i class="fas fa-brain fa-2x text-danger"></i>
+                            <span
+                                class="badge bg-danger bg-opacity-10 text-danger border border-danger border-opacity-25">Aug
+                                '25</span>
+                        </div>
+                        <h3 class="h5 fw-bold mb-2">Master Generative AI & Tools</h3>
+                        <p class="text-muted small mb-3">Infosys Springboard</p>
+                        <div class="mt-auto">
+                            <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_014157710267834368237/1-67b71eae-e3a5-482c-b65f-5c5fb0df8bd7.pdf"
+                                target="_blank" class="btn btn-sm btn-outline-danger w-100">Verify Credential <i
+                                    class="fas fa-external-link-alt ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+            <path d="M0,20 C240,60 480,0 720,30 C960,60 1200,10 1440,40 L1440,60 L0,60 Z">
+            </path>
+        </svg>
+    </div>
+
+    <!-- Achievements Section -->
+    <section class="py-5" id="achievements">
+        <div class="container py-5">
+            <h2 class="text-center display-5 fw-bold mb-5" data-aos="fade-up">
+                <span class="text-gradient">Achievements</span>
+            </h2>
+            <div class="row g-4 justify-content-center">
+                <!-- HackerRank: Problem Solving -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <a href="https://www.hackerrank.com/profile/arunchaudhary901" target="_blank"
+                        class="text-decoration-none">
+                        <div class="custom-card achievement-card p-4 h-100">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="achievement-icon bg-warning bg-opacity-10 text-warning p-3 rounded-circle">
+                                    <i class="fas fa-puzzle-piece fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-0 text-light">Problem Solving</h4>
+                                    <small class="text-muted">HackerRank</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-muted opacity-25"></i>
+                                <i class="far fa-star text-muted opacity-25"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- HackerRank: Java -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <a href="https://www.hackerrank.com/profile/arunchaudhary901" target="_blank"
+                        class="text-decoration-none">
+                        <div class="custom-card achievement-card p-4 h-100">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="achievement-icon bg-warning bg-opacity-10 text-warning p-3 rounded-circle">
+                                    <i class="fab fa-java fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-0 text-light">Java</h4>
+                                    <small class="text-muted">HackerRank</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-muted opacity-25"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- HackerRank: Python -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <a href="https://www.hackerrank.com/profile/arunchaudhary901" target="_blank"
+                        class="text-decoration-none">
+                        <div class="custom-card achievement-card p-4 h-100">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="achievement-icon bg-warning bg-opacity-10 text-warning p-3 rounded-circle">
+                                    <i class="fab fa-python fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-0 text-light">Python</h4>
+                                    <small class="text-muted">HackerRank</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-muted opacity-25"></i>
+                                <i class="far fa-star text-muted opacity-25"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- HackerRank: C++ -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://www.hackerrank.com/profile/arunchaudhary901" target="_blank"
+                        class="text-decoration-none">
+                        <div class="custom-card achievement-card p-4 h-100">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="achievement-icon bg-warning bg-opacity-10 text-warning p-3 rounded-circle">
+                                    <i class="devicon-cplusplus-plain fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-0 text-light">C++</h4>
+                                    <small class="text-muted">HackerRank</small>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-muted opacity-25"></i>
+                                <i class="far fa-star text-muted opacity-25"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- LeetCode -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <a href="https://leetcode.com/u/arunchaudhary18/" target="_blank" class="text-decoration-none">
+                        <div class="custom-card achievement-card p-4 h-100">
+                            <div class="d-flex align-items-center gap-3 mb-3">
+                                <div class="achievement-icon bg-warning bg-opacity-10 text-warning p-3 rounded-circle">
+                                    <i class="fas fa-code fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4 class="fw-bold mb-0 text-light">LeetCode Coder</h4>
+                                    <small class="text-muted">Problem Solving</small>
+                                </div>
+                            </div>
+                            <p class="mb-0 text-muted small">Actively practicing Data Structures & Algorithms on
+                                LeetCode, focusing on arrays, strings, recursion, and problem-solving patterns.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider flip">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+            <path d="M0,20 C240,60 480,0 720,30 C960,60 1200,10 1440,40 L1440,60 L0,60 Z">
+            </path>
+        </svg>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="py-5 position-relative" id="contact">
+        <div class="container py-5">
+            <h2 class="text-center display-5 fw-bold mb-5" data-aos="fade-up"><span class="text-gradient">Get In
+                    Touch</span></h2>
+            <p class="text-muted mb-5 text-center mx-auto" style="max-width: 600px;">
+                For professional inquiries, collaborations, or opportunities, please contact me through the details
+                provided below.
+            </p>
+            <div class="row g-5">
+                <!-- Contact Info Column -->
+                <div class="col-lg-5" data-aos="fade-right">
+                    <div class="custom-card p-4 h-100">
+                        <h3 class="h4 mb-4 font-mono text-primary">Contact Info</h3>
+                        <p class="text-muted mb-4 lead">
+                            Open to opportunities and collaborations. Feel free to reach out!
+                        </p>
+
+                        <div class="d-flex flex-column gap-4">
+                            <!-- Email -->
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary">
+                                    <i class="fas fa-envelope fa-lg"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Email</h6>
+                                    <a href="mailto:arunchaudhary9054@gmail.com"
+                                        class="text-muted text-decoration-none">arunchaudhary9054@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary">
+                                    <i class="fas fa-phone fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Phone</h6>
+                                    <a href="tel:+919161945652" class="text-muted text-decoration-none">+91 91619
+                                        45652</a>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary">
+                                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Location</h6>
+                                    <p class="text-muted mb-0">Jalandhar, Punjab</p>
+                                </div>
+                            </div>
+
+                            <!-- LinkedIn -->
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">LinkedIn</h6>
+                                    <a href="https://www.linkedin.com/in/arunchary45/" target="_blank"
+                                        class="text-muted text-decoration-none">Arun
+                                        Chaudhary</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Icons -->
+                        <div class="mt-5 pt-3 border-top border-secondary border-opacity-25">
+                            <h6 class="mb-3">Follow Me</h6>
+                            <div class="d-flex gap-3">
+                                <a href="https://github.com/arunchary45" target="_blank"
+                                    class="btn btn-outline-primary rounded-circle social-icon-lg" aria-label="GitHub"><i
+                                        class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/arunchary45/" target="_blank"
+                                    class="btn btn-outline-primary rounded-circle social-icon-lg"
+                                    aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/arunchry45/" target="_blank"
+                                    class="btn btn-outline-primary rounded-circle social-icon-lg"
+                                    aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="custom-card p-4 p-md-5 h-100">
+                        <h3 class="h4 mb-4 font-mono text-primary">Send Message</h3>
+                        <form action="https://formsubmit.co/arunchaudhary9054@gmail.com" method="POST"
+                            id="contact-form">
+                            <!-- FormSubmit Config -->
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_subject" value="New Submission from Portfolio!">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Your Name" required>
+                                        <label for="name" class="text-muted">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="name@example.com" required>
+                                        <label for="email" class="text-muted">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                            name="message" style="height: 150px" required></textarea>
+                                        <label for="message" class="text-muted">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit"
+                                        class="btn btn-primary px-5 py-3 rounded-pill font-mono fw-bold w-100">
+                                        Send Message <i class="fas fa-paper-plane ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <div class="mb-2">
+                <a href="https://github.com/arunchary45" target="_blank" class="footer-icon" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/arunchry45/" target="_blank" class="footer-icon"
+                    aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/arunchary45/" target="_blank" class="footer-icon"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:arunchaudhary9054@gmail.com" class="footer-icon" aria-label="Email"><i
+                        class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-content">
+                <p class="text-muted mb-2">
+                    &copy; <span id="year"></span> <span class="text-gradient fw-bold">Arun Chaudhary</span>. All rights
+                    reserved.
+                </p>
+                <p class="text-muted small mb-1 opacity-65">
+                    Design inspired by <span class="text-white">Arun Chaudhary</span> <i
+                        class="fas fa-heart text-danger ms-1 footer-heart"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
